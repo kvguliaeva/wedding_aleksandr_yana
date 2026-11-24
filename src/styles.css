@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@font-face{font-family:Cormorant;src:url('/assets/cormorant-light.woff') format('woff');font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:Cormorant;src:url('/assets/cormorant-regular.woff') format('woff');font-style:normal;font-weight:400 600;font-display:swap}
+@font-face{font-family:Tilda;src:url('/assets/tilda-sans.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+@theme{--color-paper:#f8f5f2;--color-graphite:#30312d;--font-serif:Cormorant,Georgia,serif;--font-sans:Tilda,Arial,sans-serif}
+:root{font-family:var(--font-sans);color:#30312d;background:#f8f5f2;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;font-weight:400;color-scheme:light;--paper:#f8f5f2;--graphite:#30312d;--accent:#344b3b;--muted:#74736e;--line:#d8d3cc}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:32px}body{margin:0;min-width:320px}button,input,select,textarea{font:inherit}button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}button,a{touch-action:manipulation}button{cursor:pointer}a{color:inherit;text-decoration:none}button:disabled{cursor:wait;opacity:.55}::selection{background:#dedbd4}h1,h2,h3,p,figure{margin:0}img{max-width:100%;display:block}button{border-radius:0}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #686c60;outline-offset:5px}.skip-link{position:fixed;top:12px;left:12px;z-index:20;transform:translateY(-160%);background:var(--paper);padding:12px}.skip-link:focus{transform:translateY(0)}
+.section{position:relative;width:min(100% - 48px,680px);margin-inline:auto;text-align:center}.eyebrow{font-family:var(--font-sans);font-size:12px;font-weight:400;line-height:1.5;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.section-title{font-family:var(--font-serif);font-size:46px;line-height:1.12;letter-spacing:-.025em;font-weight:300;text-transform:uppercase}.body-copy{max-width:405px;margin:24px auto 0;font-size:18px;line-height:1.55;font-weight:400;text-wrap:pretty}.detail-title{font-family:var(--font-serif);font-size:29px;font-weight:300;line-height:1.2;text-transform:uppercase}.outline-button{display:inline-flex;min-width:260px;min-height:51px;align-items:center;justify-content:center;padding:12px 26px;border:1px solid #62625c;background:transparent;font-family:var(--font-serif);font-size:20px;font-weight:400;line-height:1.2;text-transform:uppercase;transition:background .25s,color .25s,border-color .25s;letter-spacing:-.015em}.outline-button:hover{background:var(--graphite);border-color:var(--graphite);color:var(--paper)}
+.hero{max-width:1120px;margin:auto;padding:76px 24px 0;overflow:clip}.hero-content{position:relative;z-index:1}.wedding-word{display:flex;align-items:center;justify-content:center;gap:20px;font-family:var(--font-serif);font-size:22px;letter-spacing:.025em}.wedding-word::before,.wedding-word::after{content:'';height:1px;width:45px;background:#c8c4bd}.couple-names{display:flex;flex-direction:column;align-items:center;margin:38px auto 0;font-family:var(--font-serif);font-size:clamp(64px,6.8vw,90px);line-height:.97;letter-spacing:-.045em;font-weight:300;text-transform:uppercase}.couple-names span{display:block}.couple-names i{font-size:.81em;font-style:normal;font-weight:300}.wedding-date{margin-top:31px;font-family:var(--font-serif);font-size:35px;font-weight:300;letter-spacing:-.035em}.botanical{position:relative;margin:14px auto 0;width:300px;height:305px;pointer-events:none}.botanical img{width:100%;height:100%;object-fit:contain;filter:saturate(.38);mix-blend-mode:multiply}.flourish{position:absolute;pointer-events:none;color:#bcb9b2}.hero-flourish{top:90px;left:50%;width:800px;height:780px;max-width:none;transform:translateX(-50%);opacity:.9;z-index:0}.scroll-cue{display:flex;width:max-content;flex-direction:column;align-items:center;gap:17px;margin:9px auto 0;padding:10px;font-size:10px;letter-spacing:.2em;color:var(--muted)}.scroll-line{height:37px;width:1px;background:#b6b2aa;transform-origin:top;transition:transform .3s}.scroll-cue:hover .scroll-line{transform:scaleY(1.2)}
+.welcome-section{padding-top:115px}.welcome-eyebrow{margin-bottom:27px}.welcome-title{font-size:43px;line-height:1.12}.welcome-title span{display:block}.welcome-section .body-copy{max-width:410px;margin-top:28px}.signature{margin-top:28px;font-family:var(--font-serif);font-size:24px;font-weight:300;font-style:normal}.calendar-section{padding-top:84px}.calendar{max-width:340px;margin:27px auto 0}.calendar-month{font-family:var(--font-serif);font-weight:400;font-size:28px;text-transform:uppercase;letter-spacing:-.035em}.calendar-month span{font-size:24px;padding-inline:3px;color:#858078}.calendar table{width:100%;border-collapse:separate;border-spacing:0 7px;margin-top:20px;table-layout:fixed}.calendar th{height:29px;font-size:11px;letter-spacing:.06em;color:var(--muted);font-weight:400}.calendar td{height:35px;font-family:var(--font-serif);font-size:21px;line-height:1;font-weight:400}.wedding-day{position:relative;display:flex;align-items:center;justify-content:center;width:44px;height:40px;margin:auto;color:var(--paper)}.wedding-heart{position:absolute;inset:0;width:100%;height:100%;fill:var(--accent)}.wedding-day-number{position:relative;z-index:1;transform:translateY(-1px)}.calendar-note{margin-top:23px;font-family:var(--font-serif);font-size:23px;font-weight:300}.location-section{padding-top:133px}.venue-name{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:25px;font-family:var(--font-serif);font-size:25px}.venue-name svg{opacity:.65}.venue-address{margin-top:7px;font-size:11px}.venue-image-wrap{width:min(100%,560px);margin:34px auto 0}.venue-image{width:100%;height:auto;aspect-ratio:1.48;object-fit:cover;object-position:center;border-radius:2px}.location-description{max-width:405px;margin-top:33px}.location-section .outline-button{margin-top:31px}.rsvp-section{padding-top:135px;padding-bottom:130px}.rsvp-eyebrow{font-size:10px;margin-bottom:21px}.rsvp-note{font-size:13px;line-height:1.5;color:var(--muted);max-width:290px;margin:18px auto 0}.rsvp-section .outline-button{margin-top:34px;min-width:220px}.rsvp-panel{overflow:hidden}.rsvp-form{max-width:440px;margin:48px auto 0;padding:35px 0 5px;text-align:left;border-top:1px solid var(--line);font-size:16px}.form-field,fieldset{margin:0 0 27px;padding:0;border:0;min-width:0}.form-field>label,legend{display:block;margin-bottom:12px;font-size:16px;line-height:1.4}input:not([type=radio],[type=checkbox]),select,textarea{width:100%;min-height:49px;border:1px solid #c8c4bd;background:transparent;border-radius:0;color:var(--graphite);padding:12px 13px;font-size:16px;line-height:1.4}input::placeholder,textarea::placeholder{color:#858078;opacity:1}textarea{resize:vertical;min-height:108px}select{appearance:none;padding-right:35px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath stroke='%235f6058' d='m1 1 5 5 5-5'/%3E%3C/svg%3E");background-position:right 14px center;background-repeat:no-repeat}.choice{display:flex;align-items:center;gap:10px;min-height:42px;cursor:pointer;line-height:1.4}.choice input{appearance:none;flex-shrink:0;width:18px;height:18px;border:1px solid #99988f;margin:0;display:grid;place-items:center;background:transparent;accent-color:var(--graphite)}.choice input[type=radio]{border-radius:50%}.choice input:checked::after{content:'';width:10px;height:10px;background:var(--graphite)}.choice input[type=radio]:checked::after{border-radius:50%}.choice input[type=checkbox]:checked{background:var(--graphite);border-color:var(--graphite)}.choice input[type=checkbox]:checked::after{width:5px;height:9px;border:solid var(--paper);border-width:0 1px 1px 0;background:transparent;transform:translateY(-1px) rotate(45deg)}.field-hint{font-size:13px;color:var(--muted);margin:-6px 0 9px}.drink-choices{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.form-note{font-size:14px;color:#696a61;line-height:1.55}.form-note a{text-decoration:underline;text-underline-offset:3px}.form-message{margin-top:22px;padding:16px 0;border-top:1px solid var(--line);font-size:15px;line-height:1.55}.form-message.is-error{color:#7c4036}.rsvp-form .form-submit{display:flex;width:100%;margin-top:24px}.text-button{display:block;background:transparent;border:0;padding:13px 18px;margin:8px auto 0;font-size:14px;color:var(--muted);text-decoration:underline;text-underline-offset:4px;transition:color .2s}.text-button:hover{color:var(--graphite)}.form-success{text-align:center}.form-success p{margin-top:18px;line-height:1.6}.success-symbol{display:block;font-size:40px;margin-bottom:15px}
+.organizers{background:#2c2d29;color:#f1ede7;padding:74px 24px 36px}.organizers .section-title{font-size:38px}.organizers .body-copy{max-width:350px;font-size:17px;line-height:1.5;margin-top:27px;color:#dad7d0}.organizer-name{font-family:var(--font-serif);font-size:30px;font-weight:300;margin-top:37px;letter-spacing:.01em}.contacts{gap:62px;margin-top:26px}.contact{display:flex;flex-direction:column;gap:7px;font-size:16px;line-height:1.4}.contact>span:first-child{transition:color .2s}.contact:hover>span:first-child{color:#b4b8a5}.contact-name{font-size:13px;color:#c6c3bb}.footer-rule{height:1px;width:42px;background:#76776d;margin:46px auto 31px}.footer-closing{font-family:var(--font-serif);font-size:23px;font-weight:300;color:#d8d5cd}.footer-monogram{font-family:var(--font-serif);font-size:39px;font-weight:300;margin-top:18px}.footer-monogram span{font-size:29px;padding:0 5px}.footer-date{font-size:10px;letter-spacing:.18em;color:#aaa99f;margin-top:9px}
+@media(min-width:1400px){.hero{padding-top:89px}.couple-names{font-size:94px}.hero-flourish{width:900px;top:106px}}
+@media(max-width:600px){.hero{padding:61px 24px 0}.wedding-word{font-size:20px;gap:15px}.wedding-word::before,.wedding-word::after{width:30px}.couple-names{font-size:clamp(53px,13.7vw,76px);margin-top:34px;line-height:1.02}.wedding-date{font-size:32px;margin-top:23px}.hero-flourish{width:570px;height:650px;top:80px;left:47%;opacity:.75}.botanical{width:248px;height:269px;margin-top:12px}.scroll-cue{margin-top:0;font-size:9px;gap:13px}.scroll-line{height:28px}.welcome-section{padding-top:83px}.section-title{font-size:37px}.welcome-title{font-size:clamp(24px,7.1vw,30px);line-height:1.14}.welcome-eyebrow{font-size:10px;margin-bottom:24px}.body-copy{font-size:17px;line-height:1.5;max-width:330px}.welcome-section .body-copy{max-width:320px;margin-top:25px}.signature{font-size:22px;margin-top:26px}.calendar-section{padding-top:65px}.calendar-section>.eyebrow{font-size:11px}.calendar{max-width:290px;margin-top:23px}.calendar-month{font-size:25px}.calendar table{border-spacing:0 6px;margin-top:15px}.calendar td{font-size:20px;height:32px}.calendar th{font-size:10px}.wedding-day{width:39px;height:36px}.calendar-note{font-size:21px;margin-top:19px}.location-section{padding-top:91px}.venue-name{font-size:23px;margin-top:22px}.venue-address{font-size:10px}.venue-image-wrap{margin-top:28px}.venue-image{aspect-ratio:1.32}.location-description{max-width:320px;margin-top:27px}.outline-button{font-size:18px;min-width:255px;min-height:48px;padding:12px 20px}.location-section .outline-button{margin-top:28px}.detail-title{font-size:27px}.rsvp-section{padding-top:95px;padding-bottom:93px}.rsvp-eyebrow{font-size:9px;letter-spacing:.12em;margin-bottom:19px}.rsvp-section .body-copy{max-width:315px}.rsvp-note{font-size:12px;max-width:260px}.rsvp-section .outline-button{margin-top:28px}.rsvp-form{margin-top:36px;padding-top:29px}.drink-choices{grid-template-columns:1fr}.organizers{padding:57px 24px 29px}.organizers .section-title{font-size:33px}.organizers .body-copy{max-width:295px;font-size:16px;margin-top:24px}.organizer-name{font-size:28px;margin-top:31px}.contacts{gap:29px;margin-top:24px}.contact{font-size:14px;gap:7px}.contact-name{font-size:12px}.footer-rule{margin-top:35px;margin-bottom:27px}.footer-closing{font-size:21px}.footer-monogram{font-size:35px;margin-top:18px}}
+@media(max-width:359px){.section{width:calc(100% - 36px)}.hero{padding-inline:18px}.couple-names{font-size:50px}.welcome-title{font-size:24px}.contacts{gap:20px}.contact{font-size:13px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;animation-iteration-count:1!important}.scroll-line{transform:none!important}}
+
+/* Александр и Яна — композиция с иллюстрацией из приглашения. */
+.hero{padding-top:76px}
+.couple-names{gap:2px;margin-top:32px;font-size:84px;line-height:1.01;letter-spacing:-.04em}
+.couple-names i{font-size:37px;line-height:1.04;margin:6px 0 3px;color:#73776a}
+.wedding-date{margin-top:26px}
+.botanical{width:320px;height:300px;margin:11px auto 0;background:var(--paper)}
+.botanical img{width:100%;height:100%;object-fit:contain;filter:none;mix-blend-mode:multiply}
+.hero-flourish{top:54px;opacity:.48}
+.welcome-section{padding-top:88px}
+.welcome-title{font-size:43px;line-height:1.14}
+.welcome-section .body-copy{max-width:415px}
+.welcome-section .body-copy+.body-copy{margin-top:19px}
+.arrival{margin:35px auto 0;width:170px;padding-top:23px;border-top:1px solid var(--line)}
+.arrival .eyebrow{font-size:13px;letter-spacing:.14em}
+.arrival-time{font-family:var(--font-serif);font-size:42px;line-height:1.2;font-weight:300;margin-top:9px;letter-spacing:-.025em}
+.venue-address{font-family:var(--font-sans);font-size:16px;line-height:1.5;letter-spacing:0;text-transform:none;margin-top:9px;color:#74736e}
+.venue-image{aspect-ratio:1.5}
+
+
+.rsvp-section{padding-top:83px}
+.rsvp-deadline{max-width:330px;margin:22px auto 0;font-family:var(--font-serif);font-size:24px;line-height:1.25;color:#4f5548}
+.rsvp-section>.outline-button,.rsvp-section .outline-button{min-width:280px}
+.companions-field{overflow:hidden}
+.companions-hint{margin:9px 0 0;font-size:14px;line-height:1.5}
+.rsvp-form fieldset{margin-bottom:27px}
+.form-note{font-size:15px}
+.rsvp-form button:disabled{cursor:default}
+.closing{padding:76px 24px 48px}
+.closing-eyebrow{color:#c3c8b8;font-size:10px;letter-spacing:.14em;margin-bottom:27px}
+.closing .closing-title{font-size:43px;line-height:1.12}
+.closing-title span{display:block}
+.closing .body-copy{max-width:365px;margin-top:24px}
+.closing .footer-rule{margin:36px auto 28px}
+.closing .footer-closing{font-size:26px}
+.closing .footer-monogram{font-size:44px;margin-top:24px}
+.closing .footer-date{font-size:13px;letter-spacing:.12em;margin-top:13px}
+@media(max-width:600px){
+  .hero{padding-top:55px}
+  .couple-names{font-size:clamp(43px,11.9vw,65px);gap:0;margin-top:30px;line-height:1.02}
+  .couple-names i{font-size:28px;margin:7px 0 4px}
+  .wedding-date{font-size:31px;margin-top:24px}
+  .botanical{width:280px;height:280px;margin-top:6px}
+  .hero-flourish{top:69px;width:570px;opacity:.4}
+  .welcome-section{padding-top:75px}
+  .welcome-title{font-size:clamp(29px,8.5vw,37px)}
+  .welcome-section .body-copy{max-width:325px}
+  .welcome-section .body-copy+.body-copy{margin-top:17px}
+  .signature{font-size:22px}
+  .arrival{margin-top:29px;padding-top:21px}
+  .arrival-time{font-size:39px}
+  .venue-address{font-size:15px;max-width:285px;margin:9px auto 0}
+  .venue-image{aspect-ratio:1.28}
+  
+  .rsvp-section{padding-top:57px;padding-bottom:88px}
+  .rsvp-deadline{font-size:22px;max-width:285px;margin-top:22px}
+  .rsvp-section .outline-button{min-width:min(280px,100%);max-width:100%;font-size:18px}
+  .closing{padding:58px 24px 38px}
+  .closing-eyebrow{font-size:9px;letter-spacing:.1em;max-width:270px;margin:0 auto 24px}
+  .closing .closing-title{font-size:31px}
+  .closing .body-copy{max-width:300px}
+  .closing .footer-closing{font-size:24px}
+}
+@media(max-width:359px){
+  .couple-names{font-size:39px}
+  .welcome-title{font-size:29px}
+  .closing .closing-title{font-size:28px}
+  .botanical{width:255px;height:255px}
+}
